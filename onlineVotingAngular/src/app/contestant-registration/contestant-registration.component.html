@@ -1,0 +1,40 @@
+  <h2>Contestant Registration page</h2>
+  <div class="container">
+    <div class="simple">
+      <form  #signupform="ngForm" (ngSubmit)=registerContestantAngular()>
+       
+        <br/>
+        <!-- <small [class.text-danger]="msg.status==500">{{msg.message}}</small> -->
+        <div class="form-group">
+          <label for="fname">Contestant Name:</label>
+          <input type="text" class="form-control" placeholder="FirstName" name="firstname"
+            [(ngModel)]="cont.name" required pattern="[a-zA-Z]{2,20}" #firstname="ngModel"
+            [class.is-invalid]="firstname.invalid && firstname.touched">
+            <small id="Vname" *ngIf="password.invalid && password.touched" > Name is Invalid!</small>
+        </div>
+        <br>
+        <div class="form-group">
+          <!-- <label for="email">Email </label> -->
+          <label for="fname">Contestant Age:</label>
+          <input type="text" class="form-control" placeholder="ContestantAge" name="email"
+            [(ngModel)]="cont.age" required pattern="[0-9]{1,2}"
+            #email="ngModel" [class.is-invalid]="email.invalid && email.touched">
+            <small id="Vname" *ngIf="password.invalid && password.touched">Invalid age</small>
+        </div>
+        <br/>
+        <div class="form-group">
+          <label for="fname">Party Name:</label>
+          <input type="text" class="form-control" placeholder="Party Name" name="password"
+            [(ngModel)]="cont.partyName" required pattern="[a-zA-Z]{2,10}" #password="ngModel"
+            [class.is-invalid]="password.invalid && password.touched">
+          <small id="Vname" *ngIf="password.invalid && password.touched">Location invalid!</small>
+        </div>
+        <br/>
+        <button type="submit" id="sub" class="button">Register</button>
+        <br/>
+        {{this.cont.name}}:Registered Successfully
+      </form>
+    </div>
+  </div>
+  <div>
+  </div>

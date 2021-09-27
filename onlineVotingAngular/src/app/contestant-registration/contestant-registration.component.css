@@ -1,0 +1,55 @@
+
+body{
+    background-color: #17555e3b;
+    border: 800px;
+    border-radius: 90;
+    color: rgb(0, 0, 0);
+    padding: 20px 32px;
+    text-decoration: none;
+    margin: 0px 25px;
+    cursor: default;
+  }
+  .button {
+    background-color: #0a0000;
+    border: 200px;
+    color: rgb(235, 223, 223);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+.container{
+  /* background-color: #17555e3b; */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px 32px;
+  text-decoration: none;
+  margin: 0px 25px;
+  cursor: pointer;
+}
+.button {
+  background-color: #0a0000;
+  border: none;
+  color: rgb(235, 223, 223);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#Vname{
+  color: red;
+}
+.whit{
+  background-color:rgb(250, 248, 248);
+  padding: .1%;
+  color: rgb(7, 1, 1);
+}

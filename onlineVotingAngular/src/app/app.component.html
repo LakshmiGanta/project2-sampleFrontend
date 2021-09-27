@@ -1,0 +1,58 @@
+
+<html>
+<head></head>    
+    <body  class="marginAuto">
+    <div class="container-fluid">
+        <h1>Welcome to Easy Vote</h1>
+    </div>
+    <!-- <nav class="navbar">
+            <ul>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/VoterRegistration">Voter</a></li>
+            <li class="nav-item">
+            <li class="nav-item">
+                 <a class="nav-link" routerLink="/ContestantRegistration">Contestant</a></li>
+            
+            <li class="nav-item">                
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/Admin">Admin</a></li>           
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/VotePage">VotePage</a></li>
+            <li style="float:right"><a class="active" >Logout</a></li>
+        </ul>
+    </nav>   -->
+    <nav class="navbar">
+            <ul>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/VoterRegistration">Voter</a></li>
+            <li class="nav-item">
+            <li class="nav-item">
+                 <a class="nav-link" routerLink="/ContestantRegistration">Contestant</a></li>
+
+            <div class="dropdown">
+                <button class="dropbtn">Admin 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">                       
+                    <a href="/DeleteContestant">DeleteContestant</a>
+                    <a href="/UpdateContestant">UpdateContestant</a>
+                    <a href="/UpdateVoter">UpdateVoter</a>
+                    <a href="/ViewVoters">ViewVoters</a>                    
+                </div>
+                </div> 
+            <!-- <li class="nav-item">                
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/Admin">Admin</a></li>   -->
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/VotePage">VotePage</a></li>
+            <li style="float:right"><a class="active" >Logout</a></li>
+        </ul>
+    </nav>  
+  
+    <router-outlet></router-outlet>
+    </body>
+<footer>
+    <p>For any queries please contact:<br>
+    <a href="mailto:admin@easyvote.com" style="color:white">admin@easyvote.com</a></p>
+  </footer> 
+</html>
