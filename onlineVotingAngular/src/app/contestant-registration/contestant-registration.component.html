@@ -1,11 +1,39 @@
-  <h2>Contestant Registration page</h2>
-  <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+</head>
+<body>    
+    <div>
+        <h2 style="text-align: center">Contestant Registration</h2>
+        <form>
+         
+          <label for="name">Name:</label><br>
+          <input type="text" placeholder="Enter your Name"[(ngModel)]="cont.name" name="Name"><br>
+          <label for="age">Age:</label><br>
+          <input type="text" placeholder="Enter your Age"[(ngModel)]="cont.age" name="Age"><br>
+               
+          <label for="Aadhar">Aadhaar Number:</label><br>
+          <input type="number" placeholder="Enter Aadhaar Number"[(ngModel)]="cont.aadhaarNumber" name="Aadhar"><br>         
+          
+          <input class="btn btn-primary" type="submit" name="Register as Contestant">
+        </form>
+      </div>
+      
+</body>
+</html>  
+  
+  
+  
+  
+  
+  <!-- <h2>Contestant Registration page</h2>
+  <div class="container scrnHeight">
     <div class="simple">
       <form  #signupform="ngForm" (ngSubmit)=registerContestantAngular()>
        
         <br/>
-        <!-- <small [class.text-danger]="msg.status==500">{{msg.message}}</small> -->
-        <div class="form-group">
+        <!- <small [class.text-danger]="msg.status==500">{{msg.message}}</small> -->
+        <!-- <div class="form-group">
           <label for="fname">Contestant Name:</label>
           <input type="text" class="form-control" placeholder="FirstName" name="firstname"
             [(ngModel)]="cont.name" required pattern="[a-zA-Z]{2,20}" #firstname="ngModel"
@@ -13,9 +41,9 @@
             <small id="Vname" *ngIf="password.invalid && password.touched" > Name is Invalid!</small>
         </div>
         <br>
-        <div class="form-group">
+        <div class="form-group"> -->
           <!-- <label for="email">Email </label> -->
-          <label for="fname">Contestant Age:</label>
+          <!-- <label for="fname">Contestant Age:</label>
           <input type="text" class="form-control" placeholder="ContestantAge" name="email"
             [(ngModel)]="cont.age" required pattern="[0-9]{1,2}"
             #email="ngModel" [class.is-invalid]="email.invalid && email.touched">
@@ -37,4 +65,4 @@
     </div>
   </div>
   <div>
-  </div>
+  </div>  -->

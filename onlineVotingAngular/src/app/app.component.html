@@ -2,9 +2,9 @@
 <html>
 <head></head>    
     <body  class="marginAuto">
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <h1>Welcome to Easy Vote</h1>
-    </div>
+    </div> -->
     <!-- <nav class="navbar">
             <ul>
             <li class="nav-item">
@@ -23,11 +23,34 @@
     </nav>   -->
     <nav class="navbar">
             <ul>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" routerLink="/VoterRegistration">Voter</a></li>
             <li class="nav-item">
+
             <li class="nav-item">
-                 <a class="nav-link" routerLink="/ContestantRegistration">Contestant</a></li>
+                 <a class="nav-link" routerLink="/ContestantRegistration">Contestant</a></li> -->
+
+            <div class="dropdown">
+                <button class="dropbtn">Registration 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">                       
+                        <a href="/VoterRegistration">Voter</a>
+                        <a href="/ContestantRegistration">Contestant</a>
+                                            
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Login 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">                       
+                        <a href="/VoterLogin">Voter</a>
+                        <a href="/AdminLogin">Admin</a>
+                                            
+                </div>
+            </div>
+
 
             <div class="dropdown">
                 <button class="dropbtn">Admin 
@@ -39,15 +62,39 @@
                     <a href="/UpdateVoter">UpdateVoter</a>
                     <a href="/ViewVoters">ViewVoters</a>                    
                 </div>
-                </div> 
+            </div> 
             <!-- <li class="nav-item">                
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/Admin">Admin</a></li>   -->
             <li class="nav-item">
                 <a class="nav-link" routerLink="/VotePage">VotePage</a></li>
             <li style="float:right"><a class="active" >Logout</a></li>
+
         </ul>
-    </nav>  
+    </nav>
+    <!-- <div class="EasyVote-logo-image">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">
+                    <img src= "../../assets/image/easyvotelogo.png" width="250">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class ="EasyVote-background-container"> 
+
+    <img src = "../../assets/image/bg logo.png" width="100%" height="0%">
+    </div>   -->
+     <div class="container-fluid">
+        <h1>Welcome to Easy Vote</h1>
+    </div>
+    <!-- <div class="container-fluid EasyVote-content-container">
+        <div>Welcome to Easy Vote.</div>
+        <p>"Cast your Vote , Bring a change , Be a Responsible Citizen!"</p>
+
+    </div> -->
   
     <router-outlet></router-outlet>
     </body>

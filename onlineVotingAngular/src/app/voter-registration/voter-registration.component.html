@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+</head>
+<body>    
+    <div>
+        <h2 style="text-align: center">Voter Registration</h2>
+        <form>
+         
+          <label for="name">Name:</label><br>
+          <input type="text" placeholder="Enter your Name"[(ngModel)]="vot.name" name="Name"><br>
+          <label for="age">Age:</label><br>
+          <input type="text" placeholder="Enter your Age"[(ngModel)]="vot.age" name="Age"><br>
+               
+          <label for="Aadhar">Aadhaar Number:</label><br>
+          <input type="number" placeholder="Enter Aadhaar Number"[(ngModel)]="vot.aadhaarNumber" name="Aadhar"><br>         
+          
+          <input class="btn btn-primary" type="submit" name="Login as Voter">
+        </form>
+      </div>
+      
+</body>
+</html>
+
+
+
+
+
+
+
+
+
 <!-- <div class="container-fluid">
     <h3>Voter Registration</h3>
 </div>
@@ -12,14 +44,14 @@
     <input type="text" placeholder="Enter Location" [(ngModel)]="vot.location" name="something"><br>
   </form>
   <button class="btn btn-primary" type="submit"(click)="registerVoterAngular()" >Register as Voter</button> -->
-  <h2>Voter Registration page</h2>
-  <div class="container">
+  <!-- <h2>Voter Registration page</h2>
+  <div class="container scrnHeight">
     <div class="simple">
       <form  #signupform="ngForm" (ngSubmit)="registerVoterAngular()">
        
         <br/>
-        <!-- <small [class.text-danger]="msg.status==500">{{msg.message}}</small> -->
-        <div class="form-group">
+        <!<small [class.text-danger]="msg.status==500">{{msg.message}}</small> -->
+        <!-- <div class="form-group">
           <label for="fname">Voter Name:</label>
           <input type="text" class="form-control" placeholder="FirstName" name="firstname"
             [(ngModel)]="vot.name" required pattern="[a-zA-Z]{2,10}" #firstname="ngModel"
@@ -28,8 +60,8 @@
         </div>
         <br>
         <div class="form-group">
-          <!-- <label for="email">Email </label> -->
-          <label for="fname">Voter Aadhar Number:</label>
+          <!- <label for="email">Email </label> -->
+          <!-- <label for="fname">Voter Aadhar Number:</label>
           <input type="text" class="form-control" placeholder="AadharNumber" name="email"
             [(ngModel)]="vot.aadhaarNumber" required pattern="[0-9]{12}"
             #email="ngModel" [class.is-invalid]="email.invalid && email.touched">
@@ -38,10 +70,10 @@
             <small id="Vname" *ngIf="password.invalid && password.touched">Aadhar-Number is Invalid!</small>
         
         </div>
-        <br/>
-        <div class="form-group">
-          <!-- <label for="password">Password </label> -->
-          <label for="fname">Location:</label>
+        <br/> -->
+        <!-- <div class="form-group">
+          <!- <label for="password">Password </label> -->
+          <!-- <label for="fname">Location:</label>
           <input type="text" class="form-control" placeholder="Password" name="password"
             [(ngModel)]="vot.location" required pattern="[a-zA-Z]{2,10}" #password="ngModel"
             [class.is-invalid]="password.invalid && password.touched">
@@ -51,12 +83,12 @@
         <button type="submit" id="sub" class="button">Register</button>
       
         <br/>
-        <span class="whit">Existing user ?</span>
+        <span class="whit">Existing user ?</span> -->
       <!-- <small class="float-left" (click)="gotosignup()">New user ? Register here</small> -->
-      <small class="button" [routerLink]="['/VoterLogin']">Login here</small>
+      <!-- <small class="button" [routerLink]="['/VoterLogin']">Login here</small>
       </form>
     </div>
   </div>
   <div>
    
-  </div>
+  </div>  -->
